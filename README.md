@@ -175,5 +175,8 @@ train_gen = generate_batch(X_train_padded, y_train_padded, batch_size=1)
 (inp_seq, actual_output), _ = next(train_gen)
 hin_sen = translate(inp_seq)
 
+
+
+
 k = 0
 print(f'''Input English sentence: {X_train.iloc[k]}\nPredicted Hindi translation: {hin_sen}\nActual Hindi sentence: {y_train.iloc[k]}''')
